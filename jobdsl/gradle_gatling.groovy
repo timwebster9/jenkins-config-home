@@ -1,11 +1,11 @@
 pipelineJob("gradle-gatling") {
 
-    displayname('$GIT_LOCAL_BRANCH')
+    displayName('$GIT_LOCAL_BRANCH')
 
     triggers {
        githubPush()
     }
-    
+
     definition {
         cpsScm {
             scm {
