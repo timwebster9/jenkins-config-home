@@ -9,7 +9,7 @@ pipelineJob("gradle-gatling") {
                    remote {
                        url('https://github.com/timwebster9/gradle-gatling.git')
                    }
-                   branch('master')
+                   //branch('master')
                }
            }
            scriptPath('Jenkinsfile')
