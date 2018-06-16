@@ -1,9 +1,11 @@
 pipelineJob("gradle-gatling") {
 
-    displayName('$GIT_LOCAL_BRANCH')
-
     triggers {
        githubPush()
+    }
+
+    environmentVariables {
+        env('BUILD_DISPLAY_NAME', '$BUILD_NUMBER: $GIT_LOCAL_BRANCH')
     }
 
     definition {
