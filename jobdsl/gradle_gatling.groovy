@@ -5,7 +5,8 @@ pipelineJob("gradle-gatling") {
     }
 
     wrappers {
-        buildName('#${BUILD_NUMBER}: ${ENV, var="GIT_LOCAL_BRANCH"}')
+        //buildName('#${BUILD_NUMBER}: ${ENV, var="GIT_LOCAL_BRANCH"}')
+        buildName('test-name')
     }
 
     definition {
