@@ -4,11 +4,6 @@ pipelineJob("gradle-gatling") {
        githubPush()
     }
 
-    wrappers {
-        //buildName('#${BUILD_NUMBER}: ${ENV, var="GIT_LOCAL_BRANCH"}')
-        buildName('test-name')
-    }
-
     definition {
         cpsScm {
             scm {
@@ -25,5 +20,10 @@ pipelineJob("gradle-gatling") {
             }
             scriptPath('Jenkinsfile')
         }
+    }
+
+        wrappers {
+        //buildName('#${BUILD_NUMBER}: ${ENV, var="GIT_LOCAL_BRANCH"}')
+        buildName('test-name')
     }
 }
