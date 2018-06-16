@@ -1,12 +1,5 @@
 pipelineJob("gradle-gatling") {
 
-    configure { project ->
-       flow-definition / 'buildwrappers' {
-           'buildName'('test-name')
-       }
-
-    }
-
     triggers {
        githubPush()
     }
