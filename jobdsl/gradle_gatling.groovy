@@ -1,7 +1,7 @@
 pipelineJob("gradle-gatling") {
 
     configure { project ->
-       project / 'buildwrappers' {
+       flow-definition / 'buildwrappers' {
            'buildName'('test-name')
        }
 
