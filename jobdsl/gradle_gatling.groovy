@@ -1,4 +1,7 @@
 pipelineJob("gradle-gatling") {
+   triggers {
+      githubPush()
+   }
    definition {
        cpsScm {
            scm {
